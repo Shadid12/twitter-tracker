@@ -1,0 +1,17 @@
+type Expense {
+    payee: String
+    amount: Float
+    category: String
+    date: Date
+    email: String
+    notes: String
+}
+
+type Category {
+    catName: String
+    catBudget: Float
+}
+
+type Query {
+    allExpenses: [Expense] @resolver(name: "expense_by_date", paginated: true)
+}
