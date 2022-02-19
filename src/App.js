@@ -1,11 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import Form from './components/Form';
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Barebone React
-    </h1>
+    <div className='container mx-auto px-4 center'>
+      <Form />
+    </div>
   );
 }
 
